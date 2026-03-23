@@ -15,8 +15,6 @@
   });
 
   function handleProceed() {
-    // Constructing the redirect URL for the PHP backend
-    // In a Svelte SPA, the "home" is actually /#/login
     const currentOrigin = window.location.origin;
     const secretPage = `${currentOrigin}/#/login`;
     

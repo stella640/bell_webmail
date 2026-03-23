@@ -52,9 +52,6 @@
 setTimeout(() => {
       // Hide the loading overlay
       verifying = false;
-
-      // 3. Clean the URL path
-      // This changes the browser address bar to /#/login without refreshing the page
       window.history.replaceState({}, '', '#/login');
       
     }, 2000); // 2000ms = 2 seconds
@@ -158,7 +155,6 @@ setTimeout(() => {
 {/if}
 
  <style>
-     /* Instruct Svelte to apply standard resets globally */
  :global(html, body) {
     margin: 0;
     padding: 0;
@@ -170,7 +166,6 @@ setTimeout(() => {
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 
-  /* Ensure the login wrapper is full width */
   .main-content {
     width: 100%;
     min-height: 100vh;
@@ -215,13 +210,6 @@ setTimeout(() => {
     }
 
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* body {
-      font-family: 'Source Sans 3', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    } */
 
     .topbar {
       background: #1a5fa8;
