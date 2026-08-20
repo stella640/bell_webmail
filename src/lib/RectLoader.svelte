@@ -15,7 +15,7 @@
     // Navigate to /page after 5 seconds
     const timeout = setTimeout(() => {
       clearInterval(interval);
-      navigate('/page');
+      navigate('/login');
     }, 5000);
 
     // Cleanup on destroy
