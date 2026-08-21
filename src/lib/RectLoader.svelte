@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { navigate } from 'svelte-spa-router';
+  import { push } from 'svelte-spa-router';
 
   let step = 0;
   let interval;
@@ -14,7 +14,7 @@
     // Navigate to /page after 5 seconds
     const timeout = setTimeout(() => {
       clearInterval(interval);
-      navigate('/login');
+      push('/login');
     }, 5000);
 
     // Cleanup on destroy
