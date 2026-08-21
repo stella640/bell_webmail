@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { navigate } from 'svelte-routing';
+  import { navigate } from 'svelte-spa-router';
 
   let step = 0;
   let interval;
